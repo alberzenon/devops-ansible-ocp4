@@ -1,0 +1,17 @@
+- name: Demostrar moduls k8s
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  vars:
+    namespace: albertozenon-dev
+    
+  
+  module_defaults:
+    group/k8s:
+      namespace:  "{{ namespace  }}"
+      apy_key: ""
+      host: 
+      
+      
+  task:
+    -name
